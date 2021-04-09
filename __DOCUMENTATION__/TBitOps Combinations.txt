@@ -1,0 +1,26 @@
+#
+# Written By: SockNastre
+#
+# All information in this document is free to use as you wish.
+#
+
+===============================================================================
+General
+===============================================================================
+
+Before getting into potential combinations of bitwise operations, it should be
+made clear that "TBitOps" stands for "Textual Bitwise-Operations"; my term for
+bitwise-operations that are represented purely textually.
+
+This document is going to lay out potential bitwise-operation setups, and how
+they can be handled for the bitOps draw.io plugin. Here I will list SOME of
+the things I am talking about...
+
+Valid Operations:
+	- A OR B
+	- NOT (A OR B)
+	- A NOR B
+
+Invalid Operations:
+	- A OR B OR C
+
