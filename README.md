@@ -8,7 +8,7 @@ __NOTE:__ Any non-JavaScript source code files are likely for logic-testing befo
 
 ### Installation
 
-1. Download [bitOps plugin](bitops.js).
+1. Download [bitOps plugin](bitops.js). (Desktop Only)
 2. In diagrams.net, go to "Extras" -> "Plugins".
 3. In the opened dialogue, click "Add".
    - If on desktop version, click "Select File..." and select [bitOps plugin](bitops.js) file.
