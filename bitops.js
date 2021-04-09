@@ -2,7 +2,7 @@
  * Adds bitwise operations UI as part of the bitOps plugin.
  * Based on: https://github.com/jgraph/drawio/blob/master/src/main/webapp/js/grapheditor/Sidebar.js#L696
  */
-Sidebar.prototype.addbitOpsPalette = function(title, expand)
+Sidebar.prototype.addbitOpsPalette = function(title, placeholder, expand)
 {
 	// Variable in container which controls title
 	var elt = this.createTitle(title);
@@ -39,7 +39,7 @@ Sidebar.prototype.addbitOpsPalette = function(title, expand)
 
 	// Creates textbox element, then adds it to "inner" as a child control
 	var input = document.createElement('input');
-	input.setAttribute('placeholder', "A OR B");
+	input.setAttribute('placeholder', placeholder);
 	input.setAttribute('type', 'text');
 	input.style.fontSize = '12px';
 	input.style.overflow = 'hidden';
@@ -151,7 +151,7 @@ Draw.loadPlugin(function(ui)
 	if (ui.sidebar != null)
 	{
 		// Adds bitOps side UI
-		ui.sidebar.addbitOpsPalette("bitOps", true);
+		ui.sidebar.addbitOpsPalette("bitOps", "A OR B", true);
 	
 	    // Collapses default sidebar entry and inserts this before
 	    var c = ui.sidebar.container;
