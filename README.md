@@ -12,7 +12,7 @@ __NOTE:__ Any non-JavaScript source code files are likely for logic-testing befo
 2. In diagrams.net, go to "Extras" -> "Plugins".
 3. In the opened dialogue, click "Add".
    - If on desktop version, click "Select File..." and select [bitOps plugin](bitops.js) file.
-   - If on web version, click "Custom..." then add URL to [bitOps plugin](bitops.js) code in this repo. (UNTESTED)
+   - If on web version, click "Custom..." then add URL to [bitOps plugin](bitops.js) code from this repo. (UNTESTED)
 
 ### Showcase
 
