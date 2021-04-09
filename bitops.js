@@ -58,7 +58,7 @@ Sidebar.prototype.addbitOpsPalette = function(title, placeholder, expand)
 
 	// Creates button and center frame for button
 	var center = document.createElement('center');
-	var button = mxUtils.button("Generate", function()
+	var button = mxUtils.button("Draw", function()
 	{
 		gen();
 	});
