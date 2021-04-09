@@ -17,12 +17,12 @@ they can be handled for the bitOps draw.io plugin. Here I will list SOME of
 the things I am talking about...
 
 Valid Operations:
-	- A OR B
-	- NOT (A OR B)
-	- A NOR B
+    - A OR B
+    - NOT (A OR B)
+    - A NOR B
 
 Invalid Operations:
-	- A OR B OR C
+    - A OR B OR C
 
 ===============================================================================
 bitOps Standard
@@ -32,21 +32,21 @@ In order for bitOps to be able to understand the operation properly, a standard
 must be in place.
 
 The standard here will consist of different rules:
-	1. Use of parentheses to group operations together.
-	2. A variable cannot have an operation to its left AND right.
-	3. Variables go from A-Z, no more.
-	4. Supported operations are:
-		- NOT
-		- AND
-		- OR
-		- XOR
-		- NOR
-		- XNOR
-		- NAND
-	5. All operations/variables need a space before and after them.
-	6. Parantheses need only one space either on the left or right.
-		- If it is a left parenthesis then the space is before it.
-		- If it is a right parenthesis then the space is after it.
-	7. Only exception to the space rules is if the operation/variable/
-	paranthesis is at the end of the entire operation; in this case the right-
-	handed space can be omitted.
+    1. Use of parentheses to group operations together.
+    2. A variable cannot have an operation to its left AND right.
+    3. Variables go from A-Z, no more.
+    4. Supported operations are:
+        - NOT
+        - AND
+        - OR
+        - XOR
+        - NOR
+        - XNOR
+        - NAND
+    5. All operations/variables need a space before and after them.
+    6. Parantheses need only one space either on the left or right.
+        - If it is a left parenthesis then the space is before it.
+        - If it is a right parenthesis then the space is after it.
+    7. Only exception to the space rules is if the operation/variable/
+    paranthesis is at the end of the entire operation; in this case the right-
+    handed space can be omitted.
