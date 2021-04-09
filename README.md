@@ -17,4 +17,4 @@ __NOTE:__ Any non-JavaScript source code files are likely for logic-testing befo
 ### Showcase
 
 #### Sidebar UI
-![sidebarUIShowcase1](https://i.imgur.com/2qoHajT.png)
+![sidebarUIShowcase1](https://i.imgur.com/4PNiRJ3.png)
