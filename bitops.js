@@ -109,36 +109,36 @@ Sidebar.prototype.addbitOpsPalette = function(title, placeholder, expand)
 
 	////////////////////////////////////////////////////////////////////////////
 	//
-    // Workaround for blocked text selection in Editor
+	// Workaround for blocked text selection in Editor
 	//
-    mxEvent.addListener(input, 'mousedown', function(evt)
-    {
-    	if (evt.stopPropagation)
-    	{
-    		evt.stopPropagation();
-    	}
+	mxEvent.addListener(input, 'mousedown', function(evt)
+	{
+		if (evt.stopPropagation)
+		{
+			evt.stopPropagation();
+		}
     	
-    	evt.cancelBubble = true;
-    });
+		evt.cancelBubble = true;
+	});
     
 	////////////////////////////////////////////////////////////////////////////
 	//
-    // Workaround for blocked text selection in Editor
+	// Workaround for blocked text selection in Editor
 	//
-    mxEvent.addListener(input, 'selectstart', function(evt)
-    {
-    	if (evt.stopPropagation)
-    	{
-    		evt.stopPropagation();
-    	}
+	mxEvent.addListener(input, 'selectstart', function(evt)
+	{
+		if (evt.stopPropagation)
+		{
+			evt.stopPropagation();
+		}
     	
-    	evt.cancelBubble = true;
-    });
+		evt.cancelBubble = true;
+	});
 
 	// Adds sidebar element to title
 	var outer = document.createElement('div');
-    outer.appendChild(div);
-    this.container.appendChild(outer);
+	outer.appendChild(div);
+	this.container.appendChild(outer);
 };
 
 /**
@@ -153,10 +153,10 @@ Draw.loadPlugin(function(ui)
 		// Adds bitOps side UI
 		ui.sidebar.addbitOpsPalette("bitOps", "A OR B", true);
 	
-	    // Collapses default sidebar entry and inserts this before
-	    var c = ui.sidebar.container;
-	    c.firstChild.click();
-	    c.insertBefore(c.lastChild, c.firstChild);
-	    c.insertBefore(c.lastChild, c.firstChild);
+		// Collapses default sidebar entry and inserts this before
+		var c = ui.sidebar.container;
+		c.firstChild.click();
+		c.insertBefore(c.lastChild, c.firstChild);
+		c.insertBefore(c.lastChild, c.firstChild);
 	}
 });
