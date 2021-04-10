@@ -29,3 +29,52 @@ output of a value, so it is a variable.
 Now that you know what a variable is to our tool, an operation is simply the
 bitwise operation being done to a variable or two variables.
 
+===============================================================================
+Basic Operation-Grabbing Algorithm
+===============================================================================
+
+To highlight the basics of our algorithm, let's look at a few examples ranging
+from simple to more complex:
+
+----------------------------------------
+A OR B
+----------------------------------------
+
+    1. Detects first character is part of a variable, "A".
+    2. Knows next character is space, then operation.
+    3. Reads operation ending at next space, operation is read as "OR".
+    4. Knows next character is space, then variable.
+    5. Reads next variable as "B".
+
+----------------------------------------
+NOT A
+----------------------------------------
+
+    1. Detects operation as "NOT", this is detected because after reading the
+    character "N" it checks if the character after is a space. Since it is
+    not a space the rest of the characters until the next space must be an
+    operation.
+    2. Since "NOT" is a single-input operation, algorithm knows after next
+	space a variable must exist.
+    3. Reads next variable as "A".
+
+
+----------------------------------------
+NOT (A OR B)
+----------------------------------------
+
+    1. Detects operation as "NOT", this is detected because after reading the
+    character "N" it checks if the character after is a space. Since it is
+    not a space the rest of the characters until the next space must be an
+    operation.
+    2. Since "NOT" is a single-input operation, algorithm knows after next
+	space a variable must exist.
+    3. Sees that there exists an opening-parenthesis. Tool reads until closing-
+	parenthesis.
+	4. Reads next variable as "A OR B", marks it as its own operation based on
+	length (it's not equal to 1).
+	5. Reads "A OR B" like in the first example above...
+
+Given this system of grabbing operations, it should be possible to make a
+recursive system where, once data is managed at a smaller scale, it can be
+easily managed on a larger scale.
