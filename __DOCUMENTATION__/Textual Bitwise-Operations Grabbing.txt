@@ -1,0 +1,31 @@
+#
+# Written By: SockNastre
+# Date: 04/10/2021
+#
+# All information in this document is free to use as you wish.
+#
+
+===============================================================================
+General
+===============================================================================
+
+Before reading this document, make sure you have read the document
+"Textual Bitwise-Operations Setup" as that helps setup a basis for this.
+
+So, sure, we setup our tBitOps and now we want to read them properly right?
+This is not so simple as it sounds, we will discuss some algorithm approaches
+we can use to grab variables, operations, operations in association with
+variables.
+
+Before getting into that, a variable in our standard is a value output. So if
+we have the operation "A OR B", A and B are the variables here; they output
+the numbers associated with them. Even though A and B on their own have no
+operation being done, that itself is an operation... no operation!
+
+Sticking with "A OR B", there is one more variable you may have missed. This
+variable would be the entirety of "A OR B"! This operation results in the
+output of a value, so it is a variable.
+
+Now that you know what a variable is to our tool, an operation is simply the
+bitwise operation being done to a variable or two variables.
+
