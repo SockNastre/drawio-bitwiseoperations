@@ -78,3 +78,10 @@ NOT (A OR B)
 Given this system of grabbing operations, it should be possible to make a
 recursive system where, once data is managed at a smaller scale, it can be
 easily managed on a larger scale.
+
+===============================================================================
+Storage of Operations + Variables
+===============================================================================
+
+For 2-input Operations: OBJECT1 + OBJECT2 + OPERATION
+For 1-input Operations: OBJECT1 + OPERATION
