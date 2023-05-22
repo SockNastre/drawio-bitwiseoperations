@@ -1,6 +1,6 @@
 ## drawio-bitwiseoperations
 
-_DISCLAIMER: Currently project work is on hiatus, if anyone would like to push here feel free to submit a request and if it looks good I will accept it._
+~_DISCLAIMER: Currently project work is on hiatus, if anyone would like to push here feel free to submit a request and if it looks good I will accept it._~
 
 ### Info
 
